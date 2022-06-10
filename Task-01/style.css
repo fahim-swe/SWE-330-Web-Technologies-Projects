@@ -2,6 +2,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box !important; 
     overflow-x: hidden !important;
+    margin: 0;
 }
 
 body{
@@ -171,9 +172,10 @@ li:hover{
 
 .section-3-card-2-item{
     background-color: #F4F6F6;
-    margin: 10px;
+    margin: 4%;
     text-align: left;
     padding: 7% 3%;
+    
 }
 
 .section-3-card-2-icon{
