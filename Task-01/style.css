@@ -1,11 +1,20 @@
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
+    box-sizing: border-box !important; 
+    overflow-x: hidden !important;
 }
 
 body{
     overflow: auto;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.72;
+    font-style: normal;
+    word-wrap: break-word;
 }
+
 /* Navigation Bar */
 .nav{
     display: flex;
@@ -40,15 +49,21 @@ li:hover{
 
 /* Section 02 */
 .section-1{
-    /* background-image: url("https://source.unsplash.com/random/560x560"); */
+    background-image: linear-gradient(
+      to left,
+      rgba(200, 200, 255, 0),
+      rgba(0, 71, 171, 0.9)
+    ),
+    url(./asset/bgimg.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    background-image: linear-gradient(to right, #246DB8 , #AAC9F1);
     padding: 10% 5%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     color: white;
+    line-height: 1.24;
 }
 
 .section-1-title{
@@ -98,8 +113,10 @@ li:hover{
 }
 
 .card-section-3-item-description{
-    text-justify: auto;
+    text-shadow: #000428;
     margin: 50px 0px;
+    text-align: justify;
+    word-wrap: break-word;
 }
 
 
@@ -131,7 +148,7 @@ li:hover{
 }
 
 .card-section-3-item{
-    padding: 5% 3%;
+    padding: 5% 4%;
     background-color: #075AAE;
     margin: 10px;
     color: #ffffff;
@@ -173,8 +190,16 @@ li:hover{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 7% 10%;
-    background-color: #075AAE;
+   
+    background-image: linear-gradient(
+      to right,
+      rgba(200, 200, 255, 0),
+      rgba(0, 71, 171, 0.9)
+    ),
+    url(./asset/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: white;
 }
 
@@ -185,16 +210,19 @@ li:hover{
 }
 .section-5{
     display: flex;
-    margin: 100px;
     background-color: #FFFFFF;
+    margin: 10% 5%;
 }
 
 .section-5-part-1{
-    margin: 5%;
-    color: black
+    padding: 5%;
+    color: #000000;
+    width: 60vw;
+   
 }
 .section-5-part-2{
-    height: 90vh;
+    width: 40vw;
+    background-color: #F4F6F6;
 }
 
 
