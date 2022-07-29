@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "47ef559f-90c6-4b2b-be0d-8b7935abba4c",
+		"name": "Account",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21064596"
+	},
+	"item": [
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\": \"fahim\",\n  \"password\": \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7154/Account/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7154",
+					"path": [
+						"Account",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-USER",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7154/Account/fahim",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7154",
+					"path": [
+						"Account",
+						"fahim"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REGISTRATION",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\": \"Mahmud\",\n  \"password\": \"12345678\",\n  \"dateOfBirth\": \"2000-07-11T10:52:39.163Z\",\n  \"email\": \"mahmud@gmail.com\",\n  \"phone\": \"017XXXXXXXX\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7154/Account",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7154",
+					"path": [
+						"Account"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

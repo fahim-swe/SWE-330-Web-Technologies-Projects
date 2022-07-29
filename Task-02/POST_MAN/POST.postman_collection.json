@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "a7bc30b2-9f1a-48f3-98e4-24aa73e01eb3",
+		"name": "POST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21064596"
+	},
+	"item": [
+		{
+			"name": "GET-All-POST",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOlsiZmFoaW0iLCIwOGRhNjBjNi1iZWU5LTQ2Y2UtOGJjZS01NTU5OTAwMWZhYzMiXSwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvYXV0aGVudGljYXRpb24iOiIwOGRhNjBjNi1iZWU5LTQ2Y2UtOGJjZS01NTU5OTAwMWZhYzMiLCJJZCI6IjA4ZGE2MGM2LWJlZTktNDZjZS04YmNlLTU1NTk5MDAxZmFjMyIsInVuaXF1ZV9uYW1lIjoiZmFoaW0iLCJlbWFpbCI6ImZhaGltQGdtYWlsLmNvbSIsIlBob25lIjoiMDE3MjI5MzA4ODUiLCJuYmYiOjE2NTc1Mzg1NTYsImV4cCI6MTY1ODE0MzM1NiwiaWF0IjoxNjU3NTM4NTU2fQ._DS4oPE2GKeee4ppndxNaZ6HUjjfAit4Z-IgnOFMNWY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7154/Post",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7154",
+					"path": [
+						"Post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE_POST",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOlsiZmFoaW0iLCIwOGRhNjBjNi1iZWU5LTQ2Y2UtOGJjZS01NTU5OTAwMWZhYzMiXSwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvYXV0aGVudGljYXRpb24iOiIwOGRhNjBjNi1iZWU5LTQ2Y2UtOGJjZS01NTU5OTAwMWZhYzMiLCJJZCI6IjA4ZGE2MGM2LWJlZTktNDZjZS04YmNlLTU1NTk5MDAxZmFjMyIsInVuaXF1ZV9uYW1lIjoiZmFoaW0iLCJlbWFpbCI6ImZhaGltQGdtYWlsLmNvbSIsIlBob25lIjoiMDE3MjI5MzA4ODUiLCJuYmYiOjE2NTc1Mzg1NTYsImV4cCI6MTY1ODE0MzM1NiwiaWF0IjoxNjU3NTM4NTU2fQ._DS4oPE2GKeee4ppndxNaZ6HUjjfAit4Z-IgnOFMNWY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"content\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dignissimos explicabo debitis labore aperiam. Nemo voluptatum praesentium neque fuga dignissimos, facere aliquid commodi laudantium iusto cumque voluptas quod ab velit officiis eum deleniti possimus asperiores. Eius nam, placeat, alias facere vero neque doloremque reiciendis atque illum aut eaque voluptates laboriosam!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7154/Post",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7154",
+					"path": [
+						"Post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_USER_POST",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOlsiZmFoaW0iLCIwOGRhNjBjNi1iZWU5LTQ2Y2UtOGJjZS01NTU5OTAwMWZhYzMiXSwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvYXV0aGVudGljYXRpb24iOiIwOGRhNjBjNi1iZWU5LTQ2Y2UtOGJjZS01NTU5OTAwMWZhYzMiLCJJZCI6IjA4ZGE2MGM2LWJlZTktNDZjZS04YmNlLTU1NTk5MDAxZmFjMyIsInVuaXF1ZV9uYW1lIjoiZmFoaW0iLCJlbWFpbCI6ImZhaGltQGdtYWlsLmNvbSIsIlBob25lIjoiMDE3MjI5MzA4ODUiLCJuYmYiOjE2NTc1Mzg1NTYsImV4cCI6MTY1ODE0MzM1NiwiaWF0IjoxNjU3NTM4NTU2fQ._DS4oPE2GKeee4ppndxNaZ6HUjjfAit4Z-IgnOFMNWY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7154/Post/fahim",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7154",
+					"path": [
+						"Post",
+						"fahim"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_POST",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOlsiZmFoaW0iLCIwOGRhNjBjNi1iZWU5LTQ2Y2UtOGJjZS01NTU5OTAwMWZhYzMiXSwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvYXV0aGVudGljYXRpb24iOiIwOGRhNjBjNi1iZWU5LTQ2Y2UtOGJjZS01NTU5OTAwMWZhYzMiLCJJZCI6IjA4ZGE2MGM2LWJlZTktNDZjZS04YmNlLTU1NTk5MDAxZmFjMyIsInVuaXF1ZV9uYW1lIjoiZmFoaW0iLCJlbWFpbCI6ImZhaGltQGdtYWlsLmNvbSIsIlBob25lIjoiMDE3MjI5MzA4ODUiLCJuYmYiOjE2NTc1Mzg1NTYsImV4cCI6MTY1ODE0MzM1NiwiaWF0IjoxNjU3NTM4NTU2fQ._DS4oPE2GKeee4ppndxNaZ6HUjjfAit4Z-IgnOFMNWY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7154/Post/08da632d-4fa7-4cfb-893c-245e5cff8cdf",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7154",
+					"path": [
+						"Post",
+						"08da632d-4fa7-4cfb-893c-245e5cff8cdf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
